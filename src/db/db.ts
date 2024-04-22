@@ -9,10 +9,10 @@ const sigoptions = {
 const signale = new Signale(sigoptions);
 
 const dbconfig = {
-    host: process.env.HOST,
-    user: process.env.USER,
-    database: process.env.DB,
-    password: process.env.DB_PSW,
+    host: "database-1.c5yscaec24bq.us-east-1.rds.amazonaws.com",
+    user: "admin",
+    database: "jesusDB",
+    password: "michi123",
     connectionLimit: 10,
 };
 
