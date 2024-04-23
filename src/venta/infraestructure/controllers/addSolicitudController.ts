@@ -14,7 +14,6 @@ export class AddVentaController {
                 data.precio
             )
             if (venta) {      
-                  console.log("hola estoy en ya devolvi);
                 res.status(201).send({
                     status: "succes",
                     data:{
@@ -24,7 +23,6 @@ export class AddVentaController {
                     }
                 })
             }else{
-                  console.log("hola estoy en controladocdcdr");
                 res.status(204).send({
                     status:"error",
                     data: "Ha ocurrido un error",
