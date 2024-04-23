@@ -7,12 +7,14 @@ export class AddVentaController {
     async run(req: Request, res:Response){
         const data = req.body;
         try {
+            console.log("hola estoy en controlador");
             const venta = await this.addVentaUseCase.run(
                 data.id_venta,
                 data.contenido,
                 data.precio
             )
             if (venta) {      
+                  console.log("hola estoy en ya devolvi);
                 res.status(201).send({
                     status: "succes",
                     data:{
@@ -22,6 +24,7 @@ export class AddVentaController {
                     }
                 })
             }else{
+                  console.log("hola estoy en controladocdcdr");
                 res.status(204).send({
                     status:"error",
                     data: "Ha ocurrido un error",
